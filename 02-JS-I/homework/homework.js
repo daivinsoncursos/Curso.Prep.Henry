@@ -116,7 +116,7 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(num % 2 ==0){
+  if(num % 2 === 0){
     return true;
   }else{
     return false;
@@ -243,7 +243,7 @@ function esVocal(letra){
   //Escribe tu código aquí
   if(letra.length>1){
     return "Dato incorrecto";
-  }else if(letra.toLowerCase()=="a" || letra.toLowerCase()=="e" || letra.toLowerCase()=="i" || letra.toLowerCase()=="o" || letra.toLowerCase()=="u"){
+  }else if(letra.toLowerCase()==="a" || letra.toLowerCase()==="e" || letra.toLowerCase()==="i" || letra.toLowerCase()==="o" || letra.toLowerCase()==="u"){
     return "Es vocal";
   }else{
     return "Dato incorrecto";
