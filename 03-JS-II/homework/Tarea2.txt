@@ -1,0 +1,48 @@
+En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+for
+- Principalmente el software se ejecuta en bucles, donde se evaluan expresiones una y otra vez hasta que se obtiene lo que se busca o se detiene después de algún tiempo. Javascript tiene dos expresiones de bucle incorporadas, la primera, el bucle “for”.
+
+- Este tipo de bucle tiene una sintaxis única, similar a la que tiene la instrucción if. Donde se puede apreciar la palabra reservada for, seguida de un paréntesis y luego se abren y se cierran llaves. Dentro de los paréntesis se colocan tres cosas. Primero, se debe declarar una variable, la cual es llamada variable de iteración, variable que permitirá repetir el bucle hasta cierto valor. Asimismo se tendrá una expresión condicional, el ciclo continuará ejecutándose hasta que la declaración de dicha variable sea false. Tercero, incrementaremos nuestra variable. Las tres declaraciones están separadas por un punto y coma.
+- Por ejemplo:
+for (let i = 0                 ; i < 10                 ; i++          ) {
+// | Declaramos una variable | Expresión condcicional | Incrementamos la variable |
+    console.log(i);
+}
+- En el ejemplo anterior, se aprecia inicialmente la variable de iteración i asignándole el valor de 0, el ciclo se ejecuta y cada vez que llegue al final, aumentará el contador en uno. El bucle for evalúa la expresión condicional. Si es true, se ejecutará nuevamente, si es false dejará de ejecutarse.
+&&, ||, !
+- &&
+- El operador lógico “Y” (“AND”). En Javascript se escribe con dos símbolos (&&). Este permite evaluar variables y devolverá verdadero si estas variables expresiones son true. Si uno (o más variables) son falsas, este operador devolverá false:
+
+if (90 > 10 && 11 === 11) {
+    console.log('Ambas declaraciones son ciertas, este código se ejecutará');
+}
+
+if (8 === 7 && 11 > 5) {
+    console.log('Una de las declaraciones es false, por lo que && devolverá false, y este código no se ejecutará');
+}
+
+||
+- El siguiente es el operador “Ó” (“OR”). Se escribe en Javascript con dos barras verticales (||). Permite evaluar si una de las expresiones o variables es true. Devolverá true si una (o ambas variables) de las expresiones es true. Devolverá false si AMBAS expresiones son false:
+
+if (90 > 8 || 9 === 9) {
+    console.log('Ambas declaraciones son ciertas, este código se ejecutará');
+}
+
+if (11 === 7 || 11 > 5) {
+    console.log('Una de las declaraciones es true, por lo que || devolverá true y este código se ejecutará');
+}
+
+if (90 === 5 || 2 > 10) {
+    console.log('Ambas declaraciones son falsas, por lo que || devolverá false y este código no se ejecutará');
+}
+
+!
+- El operador lógico “NOT” (“NO”). Está escrito en Javascript como un solo signo de exclamación (!). Este operador niega la condición. Como antes, el operador NOT devolverá el valor booleano opuesto de lo que se le pasa:
+
+if (!false) {
+    console.log('El ! devolverá true, porque es lo contrario de false, así que ste código se ejecutará');
+}
+
+if (!(3 === 3)) {
+    console.log('1 es igual a 1, de modo que la expresión devuelve true. El operador ! devolverá lo contrario de eso, por lo que este código NO se ejecutará');
+}
