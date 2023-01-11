@@ -1,0 +1,53 @@
+En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+Arrays
+
+Los arrays podemos definirlos como una colección de tipos de datos. Por ejemplo, Si deseamos realizar un seguimiento del nombre de cada persona en un zona residencial utilizando para ello una única variable, nombreCiudadano. Se puede realizar esta actividad utilizando los Arrays. Se puede utilizar las matrices como un espacio de almacenamiento para colecciones de datos. Para poder crear una matriz se declara una variable y se establece con []. Luego podemos agregar a ese espacio de almacenamiento (separadas por coma) tantas cadenas, números o booleanos se requiera y poder acceder a dichos elementos cuando se desee.
+Por ejemplo:
+const nombreCiudadano = ['Daivinson', 'Sergi', 'Jean', 'Francys'];
+
+Propiedad .length
+Los Arrays tienen la propiedad .length. Asimismo, los Arrays tienen muchas propiedades incorporadas útiles. La propiedad .length cuenta los caracteres, de un Array, la propiedad .length devolverá el número de los elementos en el Array:
+
+console.log(nombreCiudadano.length);  // 4
+
+Acceso a elementos en un Array
+Para poder acceder a un elemento de un Array, solo se necesita llamar al elemento por su posición en dicho Array. Cada elemento reciben una posición numérica o índice de acuerdo con su ubicación en el Array, en orden. El orden numérico de un Array, siempre comenzará en 0, por lo que el primer elemento se encontrará en el índice 0, el segundo en el índice 1, el tercero en el 2, y así sucesivamente, lo importante recordar es que el índice siempre comienza en 0 en Javascript.
+
+const nombreCiudadano = ['Daivinson', 'Sergi', 'Jean', 'Francys'];
+                                0         1        2        3
+Para acceder a un elemento en partícular, se debe escribir el nombre o la variable del Array, seguido de corchetes que contienen la asignación numérica.
+
+const nombreCiudadano = ['Daivinson', 'Sergi', 'Jean', 'Francys'];
+
+console.log(nombreCiudadano[1]);  // 'Sergi'
+Para acceder dinámicamente al último elemento del Array, se utiliza la propiedad .length. En nuestro Array nombreCiudadano, la longitud es 4. Ya se aprecia que el primer elemento siempre es 0 y que cada elemento posterior se desplaza sobre un número. Por lo que en el ejemplo anterior, el último elemento tiene un índice de 3. Ahora bien, utilizando la propiedad .length se muestra cómo se realiza cuando no se sabe el número de elementos en un Array:
+
+const nombreCiudadano = ['Daivinson', 'Sergi', 'Jean','Francys'];
+
+console.log(nombreCiudadano[nombreCiudadano.length - 1]);  // 'Francys'
+
+Asignación
+
+Se puede asignar y reasignar cualquier índice en el Array utilizando los corchetes/índice y un “=”.
+
+const nombreCiudadano = ['Daivinson', 'Sergi', 'Jean','Francys'];
+
+nombreCiudadano[0] = 'Daivinson';
+
+console.log(nombreCiudadano);  // ['Daivinson', 'Sergi', 'Jean','Francys']
+
+Utilizando bucles for en los Arrays
+
+Los bucles for se utilizan para iterar sobre todos los elementos de un Array. Utilizando la técnica de acceso al índice (“index access technique”) podemos acceder a cada elemento de la matriz. Para hacer esto, usamos el método .length como punto de parada para el ciclo.
+
+const nombreCiudadano = ['Daivinson', 'Sergi', 'Jean','Francys'];
+
+
+for (let i = 0; i < nombreCiudadano.length; i++) {
+    console.log(nombreCiudadano[i]);
+}
+
+// 'Daivinson'
+// 'Sergi'
+// 'Jean'
+// 'Francys'
